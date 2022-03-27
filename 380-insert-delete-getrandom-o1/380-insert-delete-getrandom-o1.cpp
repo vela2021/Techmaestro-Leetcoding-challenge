@@ -28,7 +28,7 @@ public:
     int getRandom() {
         return nums[rand() % nums.size()];
     }
-private:
+//private:
     vector<int> nums;
     unordered_map<int, int> m;
 };
