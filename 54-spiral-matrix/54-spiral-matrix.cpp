@@ -33,7 +33,7 @@ public:
                 }
                 down=down-1;
             }
-            if(dir==3)
+          else  if(dir==3)
             {
                 for(int i=down;i>=top;i--)
                 {
