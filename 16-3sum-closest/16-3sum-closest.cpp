@@ -12,16 +12,19 @@ public:
             while(left < right)
             {
                 int temp = nums[left] + nums[right] + nums[i];
+                if(nums[i]+nums[left]+nums[right]==target)
+                {
+                    return target;
+                }
+                if(temp<target)left++;
+                if(temp>target)right--;
                 if(abs(target - temp) < diff)
                 {
                    ans = temp;
                    diff = abs(target - temp);
                 }
-                if(temp == target) return temp;
-                else if(temp > target) right--;
-                else left++;
-            }
+                
         }
-      return ans;
-    }
+      
+    }return ans;}
 };
